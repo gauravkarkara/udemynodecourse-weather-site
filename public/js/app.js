@@ -19,8 +19,8 @@ weatherForm.addEventListener('submit',(e) => {
                 message1.textContent = data.error;
             } else {
                 //console.log(data);
-                message1.textContent = data.currentWeather;
-                message2.textContent = data.currentTemp;
+                message1.textContent = "Current Weather is " + data.currentWeather;
+                message2.textContent = "Current Temperature is " + data.currentTemp +" and it feels like "+ data.feelsLike;
             };
         })
         });
